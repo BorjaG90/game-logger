@@ -1,6 +1,6 @@
 # game-logger
 ![](https://img.shields.io/badge/Maintained-Yes-green.svg)
-![](https://img.shields.io/badge/Status-In Progress-blue.svg)
+![](https://img.shields.io/badge/Status-In_Progress-blue.svg)
 
 ## Installing
 
