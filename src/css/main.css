@@ -26,6 +26,7 @@
     margin: auto;
     border: 1px;
     border-color: black;
+    /*margin-left: 15px;*/
 }
 
 .row h1, h2, form{
