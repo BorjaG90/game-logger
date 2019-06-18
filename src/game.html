@@ -33,18 +33,58 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <h1>Game Logger</h1>
-        </div>
-        <div class="container" id="control">
-            <div class="row">
-                <div class="col-md-4">
 
-                </div>
+        <div class="container">
+
+            <div class="row" id="row-title">
+                <h1>Game Logger</h1>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row">
+
+            <hr>
+
+            <div class="row" id="row-logger">
+                <div class="col-md-3">
+                    <h2>Home Team Roster</h2>
+                    <p><a class="btn btn-success" href="#" role="button">Edit Home Team</a></p>
+                    <div class="row" class="position-titular" id="home-pos-1"></div>
+                    <div class="row" class="position-titular" id="home-pos-2"></div>
+                    <div class="row" class="position-titular" id="home-pos-3"></div>
+                    <div class="row" class="position-titular" id="home-pos-4"></div>
+                    <div class="row" class="position-titular" id="home-pos-5"></div>
+                    <div class="row" class="position-banquillo" id="home-pos-6"></div>
+                    <div class="row" class="position-banquillo" id="home-pos-7"></div>
+                    <div class="row" class="position-banquillo" id="home-pos-8"></div>
+                    <div class="row" class="position-banquillo" id="home-pos-9"></div>
+                    <div class="row" class="position-banquillo" id="home-pos-10"></div>
+                    <div class="row" class="position-banquillo" id="home-pos-11"></div>
+                    <div class="row" class="position-banquillo" id="home-pos-12"></div>
+                </div>
+                <div class="col-md-6">
+                    <h2>GameLog</h2>
+                    <p><textarea id="gamelogger" cols=80 rows=20 readonly></textarea></p>
+                </div>
+                <div class="col-md-3">
+                    <h2>Away Team Roster</h2>
+                    <p><a class="btn btn-success" href="#" role="button">Edit Away Team</a></p>
+                    <div class="row" class="position-titular" id="away-pos-1"></div>
+                    <div class="row" class="position-titular" id="away-pos-2"></div>
+                    <div class="row" class="position-titular" id="away-pos-3"></div>
+                    <div class="row" class="position-titular" id="away-pos-4"></div>
+                    <div class="row" class="position-titular" id="away-pos-5"></div>
+                    <div class="row" class="position-banquillo" id="away-pos-6"></div>
+                    <div class="row" class="position-banquillo" id="away-pos-7"></div>
+                    <div class="row" class="position-banquillo" id="away-pos-8"></div>
+                    <div class="row" class="position-banquillo" id="away-pos-9"></div>
+                    <div class="row" class="position-banquillo" id="away-pos-10"></div>
+                    <div class="row" class="position-banquillo" id="away-pos-11"></div>
+                    <div class="row" class="position-banquillo" id="away-pos-12"></div>
+                </div>
+            </div><!-- /row-logger --> 
+
+            <hr>
+            <div class="row" id="row-controlpanel">
+                <div class="col-md-12">
+                    <div class="row" id="row-buttons">
                         <form action="" id="actions">
                             <button>Free Throw Made</button>
                             <button>Free Throw Attempt</button>
@@ -60,75 +100,30 @@
                             <button>Turnover</button>
                         </form>
                     </div>
-                    <div class="row">
-                        <form action="" id="orderinput">
-                            <input type="text">
-                        </form>
+                    <div class="row" id="row-input">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <form action="" id="orderinput">
+                                <input type="text" autofocus>
+                                <button>Intro</button>
+                            </form>
+                        </div>
+                        <div class="col-md-4"></div>
                     </div>
-                    
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
+            </div> <!-- /row-controlpanel --> 
 
-                </div>
-            </div>
-        </div>
-        <div class="container" id="game"></div>
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Home Team Roster</h2>
-                    <p><a class="btn btn-success" href="#" role="button">Edit Home Team</a></p>
-                    <p>
-                        <ol id="homeroster">
-                            <li><b>B #3 Allen Iverson</b></li>
-                            <li><b>E #24 Kobe Bryant</b></li>
-                            <li><b>A #1 Tracy McGrady</b></li>
-                            <li><b>AP #21 Tim Duncan</b></li>
-                            <li><b>P #34 Shaquille O'Neal</b></li>
-                            <li>AP #41 Dirk Nowitzki</li>
-                            <li>P #21 Kevin Garnett</li>
-                            <li>B #32 Jason Kidd</li>
-                            <li>E #15 Vince Carter</li>
-                            <li>A #34 Ray Allen</li>
-                            <li>B #3 Stephon Marbury</li>
-                            <li>AP #4 Chris Webber</li>
-                        </ol>
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h2>GameLog</h2>
-                    <p><textarea id="gamelogger" cols=80 rows=20 readonly></textarea></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Away Team Roster</h2>
-                    <p><a class="btn btn-success" href="#" role="button">Edit Away Team</a></p>
-                    <p>
-                        <ol id="awayroster">
-                            <li><b>B #32 Magic Jhonson</b></li>
-                            <li><b>E #23 Michael Jordan</b></li>
-                            <li><b>A #33 Larry Bird</b></li>
-                            <li><b>AP #32 Karl Malone</b></li>
-                            <li><b>P #33 Kareem Abdul-Jabbar</b></li>
-                            <li>A #33 Scottie Pippen</li>
-                            <li>AP #32 Charles Barkley</li>
-                            <li>P #34 Hakeem Olajuwon</li>
-                            <li>E #31 Reggie Miller</li>
-                            <li>B #12 John Stockton</li>
-                            <li>E #1 Penny Hardaway</li>
-                            <li>B #20 Gary Payton</li>
-                        </ol>
-                    </p>
-                </div>
-            </div>
+            <hr>
+
             <footer>
                 <p><a href='#' >BorjaG90</a></p>
             </footer>
-        </div> <!-- /container -->        
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-            <script src="js/vendor/bootstrap.min.js"></script>
-            <script src="js/main.js"></script>
-        </body>
-    </html>
+
+        </div> <!-- /container -->  
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
