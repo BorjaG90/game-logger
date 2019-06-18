@@ -3,11 +3,30 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#gamelogger{
-    
+#gamelogger {
+    background-color: aliceblue
 }
 
+.position-titular {
+    background-color: blue;
+    padding: 5px;
+    margin: 2px;
+    margin-bottom: 5px;
+}
 
+.position-banquillo {
+    background-color: aqua;
+    padding: 5px;
+    margin: 2px;
+}
+
+.player-card {
+    text-align: center;
+    background-color: azure;
+    margin: auto;
+    border: 1px;
+    border-color: black;
+}
 
 
 
