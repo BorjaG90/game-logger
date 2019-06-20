@@ -133,7 +133,8 @@
                 </div>
                 <div class="col-md-6">
                     <h2>GameLog</h2>
-                    <p><textarea id="gamelogger" cols=80 rows=20 readonly></textarea></p>
+                    <!--<p><textarea id="gamelogger" cols=80 rows=20 readonly></textarea></p>-->
+                    <div id="gamelogger"> </div>
                 </div>
                 <div class="col-md-3">
                     <h2>Away Team Roster</h2>
@@ -248,9 +249,8 @@
                     <br>
                     <div class="row" id="row-input">
                         <form action="" id="orderinput">
-                            <input id="minute-input" type="text">
                             <input id="command-input" type="text" autofocus>
-                            <button>Intro</button>
+                            <button type="button" onclick="insertInLog()">Intro</button>
                         </form>
                     </div>
                 </div>
@@ -267,6 +267,6 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/game.js"></script>
     </body>
 </html>

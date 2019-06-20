@@ -4,7 +4,9 @@
    Author's custom styles
    ========================================================================== */
 #gamelogger {
-    background-color: aliceblue
+    background-color: aliceblue;
+    height: 425px; 
+    overflow-y: scroll;
 }
 
 .position-titular {
